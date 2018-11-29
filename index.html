@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Slider zoomed</title>
+   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+   <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+   <script type="text/javascript" src="http://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+   <script type="text/javascript" src="js/menu.js"></script>
+   <script type="text/javascript" src="js/mozaic.js"></script>
+  <script type="text/javascript" src="js/gradiants.js"></script>
+
+   <link href="https://code.jquery.com/ui/1.11.1/themes/ui-lightness/jquery-ui.css" rel="stylesheet" />
+</head>
+
+<body>
+
+
+<div class="picto-menu">
+
+</div>
+
+
+<style type="text/css">
+  body{
+    margin:0;
+    padding:0;
+    background-color:#0d042a;
+  }
+  .picto-menu{
+    position:absolute;
+    z-index:850;
+    width:19px;
+    height:19px;
+    right:20px;
+    top:20px;
+  }
+
+ 
+
+  }
+ 
+</style>
+
+<script>
+
+   $( window ).on( "load", function() {
+       
+       init_menu( $('.picto-menu'));
+
+       init_mozaic();
+
+       init_gradiants();
+      
+       
+   });
+
+  
+
+</script>
+
+   
+   
+</body>
+</html>
