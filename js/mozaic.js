@@ -107,7 +107,7 @@ function animeKikkoman(){
     $('.kikkoman-bg01').css('z-index','1');
     $('.kikkoman-bg01').css('width','0');
     $('.kikkoman-bg01').css('height','0');
-    $('.kikkoman-bg01').css('background-color','#cd2412');
+    $('.kikkoman-bg01').css('background-color','#f35c1a');
 
     $('.kikkoman-conteneur-relatif').append("<div class='kikkoman-bg02'></div>");
     $('.kikkoman-bg02').css('position','absolute');
@@ -116,7 +116,8 @@ function animeKikkoman(){
     $('.kikkoman-bg02').css('z-index','2');
     $('.kikkoman-bg02').css('width','0');
     $('.kikkoman-bg02').css('height','0');
-    $('.kikkoman-bg02').css('background-color','#f35c1a');
+    $('.kikkoman-bg02').css('background-image','linear-gradient(0deg, #cd2412 20%, #f35c1a 70%)');
+   
 
     setTimeout(animebg01Kikkoman, 0);
     setTimeout(animebg02Kikkoman, 150);
@@ -360,7 +361,7 @@ function animeBonduelle(){
     $('.bonduelle-bg01').css('z-index','1');
     $('.bonduelle-bg01').css('width','0');
     $('.bonduelle-bg01').css('height','0');
-    $('.bonduelle-bg01').css('background-color','#5a6473');
+    $('.bonduelle-bg01').css('background-color','#f7f6b4');
 
     $('.bonduelle-conteneur-relatif').append("<div class='bonduelle-bg02'></div>");
     $('.bonduelle-bg02').css('position','absolute');
@@ -369,7 +370,7 @@ function animeBonduelle(){
     $('.bonduelle-bg02').css('z-index','2');
     $('.bonduelle-bg02').css('width','0');
     $('.bonduelle-bg02').css('height','0');
-    $('.bonduelle-bg02').css('background-color','#8592a5');
+    $('.bonduelle-bg02').css('background-image','linear-gradient(30deg, #bde10f 20%, #fbf906 70%)');
 
     setTimeout(animebg01bonduelle, 0);
     setTimeout(animebg02bonduelle, 150);
@@ -458,7 +459,10 @@ function animebg02bonduelle(){
         $('.bonduelle-espace-click').css('height','100%');
         $('.bonduelle-espace-click').css('left','0');
         $('.bonduelle-espace-click').css('top','0');
+        $('.bonduelle-espace-click').css('background-color','#0f0');
         $('.bonduelle-espace-click').css('opacity','0');
+
+
 
         $('.bonduelle-logo').animate({opacity:1 },200, function() { });
 
@@ -467,42 +471,44 @@ function animebg02bonduelle(){
             $(this).css('cursor', 'pointer');
             $('.bonduelle').css('z-index','25');
             $('.bonduelle-logo').animate({opacity:0 },200, function() { });
-            $('.bonduelle-torchon').animate({opacity:1,top:0 },400, function() { });
-            $('.bonduelle-main').animate({opacity:1,bottom:0 },400, function() { });
-            $('.bonduelle-sac').animate({opacity:1,right:0 },400, function() {
-                   $('.bonduelle-bg-vide').animate({opacity:1 },400, function() { 
+            timertorchon = setTimeout(animetorchon, 50);
+            timermain =  setTimeout(animemain, 100);
+            timersac = setTimeout(animesac, 150);
+            timerfondbonduelle = setTimeout(animefondbonduelle, 400);
+            timersuppressionbonduelle = setTimeout(suppressionbonduelle, 850);
 
-                        $('.bonduelle-torchon').css('opacity','0');
-                        $('.bonduelle-main').css('opacity','0');
-                        $('.bonduelle-sac').css('opacity','0');
-                        $('.bonduelle-main').css('left','37px');
-                        $('.bonduelle-main').css('bottom','-180px');
-                        $('.bonduelle-sac').css('right','-80px');
-                        $('.bonduelle-sac').css('bottom','0');
-                        $('.bonduelle-torchon').css('left','0');
-                        $('.bonduelle-torchon').css('top','-50px');
-
-
-
-                   });
-
-            });
+            
+            
            
            
          });
 
         $('.bonduelle-espace-click').mouseout(function() {  
-            $('.bonduelle-torchon').css('opacity','0');
-            $('.bonduelle-main').css('opacity','0');
-            $('.bonduelle-sac').css('opacity','0');
-            $('.bonduelle-main').css('left','37px');
-            $('.bonduelle-main').css('bottom','-180px');
-            $('.bonduelle-sac').css('right','-80px');
-            $('.bonduelle-sac').css('bottom','0');
-            $('.bonduelle-torchon').css('left','0');
-            $('.bonduelle-torchon').css('top','-50px');
-            $('.bonduelle-bg-vide').css('opacity','1');
-            $('.bonduelle-bg-vide').animate({opacity:0 },400, function() { $('.bonduelle').css('z-index','12'); $('.bonduelle-logo').animate({opacity:1 },200, function() { }); }); 
+            clearTimeout(timertorchon); 
+            clearTimeout(timermain); 
+            clearTimeout(timersac); 
+            clearTimeout(timerfondbonduelle); 
+            clearTimeout(timersuppressionbonduelle); 
+        
+            $('.bonduelle-conteneur-bg').animate({opacity:0 },400, function() { 
+
+                $('.bonduelle-main').css('left','37px');
+                $('.bonduelle-main').css('bottom','-180px');
+                $('.bonduelle-main').css('opacity','0');
+                $('.bonduelle-sac').css('right','-80px');
+                $('.bonduelle-sac').css('bottom','0');
+                $('.bonduelle-sac').css('opacity','0');
+                $('.bonduelle-torchon').css('left','0');
+                $('.bonduelle-torchon').css('top','-50px');
+                $('.bonduelle-torchon').css('opacity','0');
+                $('.bonduelle-bg-vide').css('opacity','0');
+                $('.bonduelle-conteneur-bg').css('opacity','1');
+                $('.bonduelle').css('z-index','12'); 
+                $('.bonduelle-logo').animate({opacity:1 },200, function() { });
+
+            });
+           
+          //$('.bonduelle-bg-vide').animate({opacity:0 },400, function() { $('.bonduelle').css('z-index','12'); $('.bonduelle-logo').animate({opacity:1 },200, function() { }); }); 
             
          });
 
@@ -510,6 +516,29 @@ function animebg02bonduelle(){
     });
 }
 
+function animetorchon(){
+    $('.bonduelle-torchon').animate({opacity:1,top:0 },200, function() { });
+  }
+  function animemain(){
+    $('.bonduelle-main').animate({opacity:1,bottom:0 },200, function() { });
+  }
+  function animesac(){
+   $('.bonduelle-sac').animate({opacity:1,right:0 },200, function() {  });
+  }
+  function animefondbonduelle(){
+  $('.bonduelle-bg-vide').animate({opacity:1 },400, function() {   });
+  }
+  function suppressionbonduelle(){
+    $('.bonduelle-torchon').css('opacity','0');
+    $('.bonduelle-main').css('opacity','0');
+    $('.bonduelle-sac').css('opacity','0');
+    $('.bonduelle-main').css('left','37px');
+    $('.bonduelle-main').css('bottom','-180px');
+    $('.bonduelle-sac').css('right','-80px');
+    $('.bonduelle-sac').css('bottom','0');
+    $('.bonduelle-torchon').css('left','0');
+    $('.bonduelle-torchon').css('top','-50px');
+  }
 
 function animeStSever(){
 	$('.st-sever').append("<div class='st-sever-conteneur-relatif'></div>");
@@ -525,7 +554,7 @@ function animeStSever(){
     $('.st-sever-bg01').css('z-index','1');
     $('.st-sever-bg01').css('width','0');
     $('.st-sever-bg01').css('height','0');
-    $('.st-sever-bg01').css('background-color','#2c2c2d');
+    $('.st-sever-bg01').css('background-color','#fca18a');
 
     $('.st-sever-conteneur-relatif').append("<div class='st-sever-bg02'></div>");
     $('.st-sever-bg02').css('position','absolute');
@@ -535,6 +564,7 @@ function animeStSever(){
     $('.st-sever-bg02').css('width','0');
     $('.st-sever-bg02').css('height','0');
     $('.st-sever-bg02').css('background-color','#000');
+    $('.st-sever-bg02').css('background-image','linear-gradient(30deg, #de3e16 20%, #b21212 70%)');
 
     setTimeout(animebg01StSever, 0);
     setTimeout(animebg02StSever, 150);
@@ -546,7 +576,29 @@ function animebg01StSever(){
 	$('.st-sever-bg01').animate({width:'100%',height:'100%' },300, function() { });
 }
 function animebg02StSever(){
-	$('.st-sever-bg02').animate({width:'100%',height:'100%' },300, function() { });
+	$('.st-sever-bg02').animate({width:'100%',height:'100%' },300, function() { 
+
+        $('.st-sever-bg02').append("<div class='st-sever-conteneur-bg'></div>");
+        $('.st-sever-conteneur-bg').css('position','relative');
+        $('.st-sever-conteneur-bg').css('width','100%');
+        $('.st-sever-conteneur-bg').css('height','100%');
+
+        $('.st-sever-conteneur-bg').append("<img src='img/St-sever.svg' class='st-sever-logo'>");
+        $('.st-sever-logo').css('position','absolute');
+        $('.st-sever-logo').css('z-index','15');
+        $('.st-sever-logo').css('width','132px');
+        $('.st-sever-logo').css('height','auto');
+        $('.st-sever-logo').css('left','50%');
+        $('.st-sever-logo').css('top','50%');
+        $('.st-sever-logo').css('-webkit-transform','translate(-50%,-50%)');
+        $('.st-sever-logo').css('-ms-transform','translate(-50%,-50%)');
+        $('.st-sever-logo').css('transform','translate(-50%,-50%)');
+        $('.st-sever-logo').css('opacity','0');
+
+        
+        $('.st-sever-logo').animate({opacity:1 },200, function() { });
+
+    });
 }
 
 
@@ -564,7 +616,7 @@ function animeWeldom(){
     $('.weldom-bg01').css('z-index','1');
     $('.weldom-bg01').css('width','0');
     $('.weldom-bg01').css('height','0');
-    $('.weldom-bg01').css('background-color','#ed7d49');
+    $('.weldom-bg01').css('background-color','#f8e795');
 
     $('.weldom-conteneur-relatif').append("<div class='weldom-bg02'></div>");
     $('.weldom-bg02').css('position','absolute');
@@ -573,7 +625,7 @@ function animeWeldom(){
     $('.weldom-bg02').css('z-index','2');
     $('.weldom-bg02').css('width','0');
     $('.weldom-bg02').css('height','0');
-    $('.weldom-bg02').css('background-color','#c6501b');
+    $('.weldom-bg02').css('background-image','linear-gradient(30deg, #b85914 20%, #e7c62a 70%)');
 
     setTimeout(animebg01weldom, 0);
     setTimeout(animebg02weldom, 150);
@@ -585,7 +637,27 @@ function animebg01weldom(){
 	$('.weldom-bg01').animate({width:'100%',height:'100%' },300, function() { });
 }
 function animebg02weldom(){
-	$('.weldom-bg02').animate({width:'100%',height:'100%' },300, function() { });
+	$('.weldom-bg02').animate({width:'100%',height:'100%' },300, function() { 
+
+        $('.weldom-bg02').append("<div class='weldom-conteneur-bg'></div>");
+        $('.weldom-conteneur-bg').css('position','relative');
+        $('.weldom-conteneur-bg').css('width','100%');
+        $('.weldom-conteneur-bg').css('height','100%');
+
+        $('.weldom-conteneur-bg').append("<img src='img/logo-weldom.png' class='weldom-logo'>");
+        $('.weldom-logo').css('position','absolute');
+        $('.weldom-logo').css('z-index','15');
+        $('.weldom-logo').css('left','50%');
+        $('.weldom-logo').css('top','50%');
+        $('.weldom-logo').css('-webkit-transform','translate(-50%,-50%)');
+        $('.weldom-logo').css('-ms-transform','translate(-50%,-50%)');
+        $('.weldom-logo').css('transform','translate(-50%,-50%)');
+        $('.weldom-logo').css('opacity','0');
+
+        $('.weldom-logo').animate({opacity:1 },200, function() { });
+
+
+    });
 }
 
 
