@@ -88,6 +88,15 @@ function init_gradiants(){
     $('.masque-noir').css('top','0');
 	$('.masque-noir').css('background-color','rgba(0,0,0,0.3)');
 
+	$('.content-gradients').append("<div class='masque-noir-anime'></div>");
+	$('.masque-noir-anime').css('position','absolute');
+	$('.masque-noir-anime').css('z-index','9');
+	$('.masque-noir-anime').css('width','100%');
+    $('.masque-noir-anime').css('height','100%');
+    $('.masque-noir-anime').css('left','0');
+    $('.masque-noir-anime').css('top','0');
+	$('.masque-noir-anime').css('background-color','#10052d');
+
 	 $(window).mousemove(function(e){
          bouge_objet($('.gradient01'),25,e);
          bouge_objet($('.gradient02'),32,e);
@@ -100,8 +109,12 @@ function init_gradiants(){
          
       }); 
 
- 
+ 	setTimeout(apparitionfond, 1000);
 
+}
+
+function apparitionfond(){
+	$('.masque-noir-anime').animate({opacity:0 },600, function() { });
 }
 
 function bouge_objet(objet,tempo,event){

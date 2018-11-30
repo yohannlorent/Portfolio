@@ -474,7 +474,7 @@ function animebg02bonduelle(){
             timertorchon = setTimeout(animetorchon, 50);
             timermain =  setTimeout(animemain, 100);
             timersac = setTimeout(animesac, 150);
-            timerfondbonduelle = setTimeout(animefondbonduelle, 400);
+            timerfondbonduelle = setTimeout(animefondbonduelle, 200);
             timersuppressionbonduelle = setTimeout(suppressionbonduelle, 850);
 
             
@@ -595,7 +595,7 @@ function animebg02StSever(){
         $('.st-sever-logo').css('transform','translate(-50%,-50%)');
         $('.st-sever-logo').css('opacity','0');
 
-        
+
         $('.st-sever-logo').animate({opacity:1 },200, function() { });
 
     });
