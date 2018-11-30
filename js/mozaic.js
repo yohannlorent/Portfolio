@@ -582,6 +582,15 @@ function animebg02StSever(){
         $('.st-sever-conteneur-bg').css('position','relative');
         $('.st-sever-conteneur-bg').css('width','100%');
         $('.st-sever-conteneur-bg').css('height','100%');
+		
+		$('.st-sever-conteneur-bg').append("<img src='img/bg-st-sever.jpg' class='st-sever-ardoise'>");
+        $('.st-sever-ardoise').css('position','absolute');
+        $('.st-sever-ardoise').css('z-index','10');
+		$('.st-sever-ardoise').css('width','100%');
+        $('.st-sever-ardoise').css('height','100%');
+        $('.st-sever-ardoise').css('left','0');
+        $('.st-sever-ardoise').css('top','0');
+        $('.st-sever-ardoise').css('opacity','0');
 
         $('.st-sever-conteneur-bg').append("<img src='img/St-sever.svg' class='st-sever-logo'>");
         $('.st-sever-logo').css('position','absolute');
@@ -595,12 +604,174 @@ function animebg02StSever(){
         $('.st-sever-logo').css('transform','translate(-50%,-50%)');
         $('.st-sever-logo').css('opacity','0');
 
+		$('.st-sever-conteneur-bg').append("<img src='img/croquette.png' class='st-sever-croquette'>");
+        $('.st-sever-croquette').css('position','absolute');
+        $('.st-sever-croquette').css('z-index','20');
+        $('.st-sever-croquette').css('left','-30px');
+        $('.st-sever-croquette').css('bottom','50px');
+        $('.st-sever-croquette').css('opacity','0');
+		
+		$('.st-sever-conteneur-bg').append("<img src='img/cuisse-poulet.png' class='st-sever-cuisse'>");
+        $('.st-sever-cuisse').css('position','absolute');
+        $('.st-sever-cuisse').css('z-index','21');
+        $('.st-sever-cuisse').css('right','40px');
+        $('.st-sever-cuisse').css('top','10px');
+        $('.st-sever-cuisse').css('opacity','0');
+		
+		$('.st-sever-conteneur-bg').append("<img src='img/tomate-quartier.png' class='st-sever-tomate01'>");
+        $('.st-sever-tomate01').css('position','absolute');
+        $('.st-sever-tomate01').css('z-index','22');
+        $('.st-sever-tomate01').css('right','170px');
+        $('.st-sever-tomate01').css('bottom','-10px');
+        $('.st-sever-tomate01').css('opacity','0');
+		
+		$('.st-sever-conteneur-bg').append("<img src='img/tomate-rondelle.png' class='st-sever-tomate02'>");
+        $('.st-sever-tomate02').css('position','absolute');
+        $('.st-sever-tomate02').css('z-index','23');
+        $('.st-sever-tomate02').css('left','50px');
+        $('.st-sever-tomate02').css('top','70px');
+        $('.st-sever-tomate02').css('opacity','0');
+		
+		$('.st-sever-conteneur-bg').append("<img src='img/fromage-01.png' class='st-sever-fromage01'>");
+        $('.st-sever-fromage01').css('position','absolute');
+        $('.st-sever-fromage01').css('z-index','24');
+        $('.st-sever-fromage01').css('right','30px');
+        $('.st-sever-fromage01').css('top','50px');
+        $('.st-sever-fromage01').css('opacity','0');
+		
+		$('.st-sever-conteneur-bg').append("<img src='img/fromage-02.png' class='st-sever-fromage02'>");
+        $('.st-sever-fromage02').css('position','absolute');
+        $('.st-sever-fromage02').css('z-index','25');
+        $('.st-sever-fromage02').css('right','70px');
+        $('.st-sever-fromage02').css('bottom','50px');
+        $('.st-sever-fromage02').css('opacity','0');
+		
+		$('.st-sever-conteneur-bg').append("<img src='img/fromage-03.png' class='st-sever-fromage03'>");
+        $('.st-sever-fromage03').css('position','absolute');
+        $('.st-sever-fromage03').css('z-index','26');
+        $('.st-sever-fromage03').css('left','10px');
+        $('.st-sever-fromage03').css('top','50px');
+        $('.st-sever-fromage03').css('opacity','0');
+		
+		$('.st-sever-conteneur-bg').append("<img src='img/aromate-01.png' class='st-sever-aromates01'>");
+        $('.st-sever-aromates01').css('position','absolute');
+        $('.st-sever-aromates01').css('z-index','27');
+        $('.st-sever-aromates01').css('left','90px');
+        $('.st-sever-aromates01').css('bottom','50px');
+        $('.st-sever-aromates01').css('opacity','0');
+		
+		$('.st-sever-conteneur-bg').append("<img src='img/aromate-02.png' class='st-sever-aromates02'>");
+        $('.st-sever-aromates02').css('position','absolute');
+        $('.st-sever-aromates02').css('z-index','28');
+        $('.st-sever-aromates02').css('left','50%');
+        $('.st-sever-aromates02').css('top','40px');
+        $('.st-sever-aromates02').css('opacity','0');
+		
+		$('.st-sever-conteneur-bg').append("<img src='img/aromate-03.png' class='st-sever-aromates03'>");
+        $('.st-sever-aromates03').css('position','absolute');
+        $('.st-sever-aromates03').css('z-index','29');
+        $('.st-sever-aromates03').css('right','95px');
+        $('.st-sever-aromates03').css('bottom','15px');
+        $('.st-sever-aromates03').css('opacity','0');
 
         $('.st-sever-logo').animate({opacity:1 },200, function() { });
+		
+		 $('.st-sever-conteneur-bg').append("<div class='stsever-espace-click'></div>");
+        $('.stsever-espace-click').css('position','absolute');
+        $('.stsever-espace-click').css('z-index','80');
+        $('.stsever-espace-click').css('width','100%');
+        $('.stsever-espace-click').css('height','100%');
+        $('.stsever-espace-click').css('left','0');
+        $('.stsever-espace-click').css('top','0');
+        $('.stsever-espace-click').css('opacity','0');
+
+
+   
+
+          //Action au survol
+        $('.stsever-espace-click').mouseover(function() {  
+            $(this).css('cursor', 'pointer');
+            /*$('.kikkoman').css('z-index','25');
+             $('.kiko-bg-vide').animate({opacity:1 },200, function() { });
+            $('.kiko-logo').animate({opacity:0 },200, function() { });*/
+            
+			timerardoise = setTimeout(animeardoise, 25);
+            timercroquette = setTimeout(animecroquette, 50);
+            timercuisse =  setTimeout(animecuisse, 150);
+            timertomate01 = setTimeout(animetomate01, 200);
+            timertomate02 = setTimeout(animetomate02, 250);
+            timerfromage01 = setTimeout(animefromage01, 300);
+            timerfromage02 = setTimeout(animefromage02, 350);
+            timerfromage03 = setTimeout(animefromage03, 400);
+            timeraromate01 = setTimeout(animearomate01, 450);
+            timeraromate02 = setTimeout(animearomate02, 500);
+            timeraromate03 = setTimeout(animearomate03, 550);
+         
+         });
+		
+		  $('.stsever-espace-click').mouseout(function() { 
+			  clearTimeout(timerardoise); 
+            clearTimeout(timercroquette); 
+            clearTimeout(timercuisse); 
+            clearTimeout(timertomate01); 
+            clearTimeout(timertomate02); 
+            clearTimeout(timerfromage01); 
+            clearTimeout(timerfromage02); 
+            clearTimeout(timerfromage03); 
+            clearTimeout(timeraromate01); 
+            clearTimeout(timeraromate02); 
+            clearTimeout(timeraromate03); 
+          //$('.kikkoman').css('z-index','10');
+           
+            
+           $('.st-sever-croquette').animate({opacity:0,left:'-30px',bottom:'50px' },200, function() { });  
+			  $('.st-sever-cuisse').animate({opacity:0,right:'40px',top:'10px' },200, function() { });
+			   $('.st-sever-tomate01').animate({opacity:0,right:'170px',bottom:'-10px' },200, function() { });
+			   $('.st-sever-tomate02').animate({opacity:0,left:'50px',top:'70px' },200, function() { });
+			   $('.st-sever-fromage01').animate({opacity:0,right:'30px',top:'50px' },200, function() { });
+			  $('.st-sever-fromage02').animate({opacity:0,right:'70px',bottom:'50px' },200, function() { });
+			   $('.st-sever-fromage03').animate({opacity:0,left:'10px',top:'50px' },200, function() { });
+			  $('.st-sever-aromates01').animate({opacity:0,left:'90px',bottom:'50px' },200, function() { });
+			  $('.st-sever-aromates02').animate({opacity:0,left:'50%',top:'40px' },200, function() { });
+			  $('.st-sever-aromates03').animate({opacity:0,right:'95px',bottom:'15px' },200, function() { });
+			   $('.st-sever-ardoise').animate({opacity:0 },200, function() { });
+         });
 
     });
 }
-
+function animeardoise(){
+     $('.st-sever-ardoise').animate({opacity:1 },200, function() { });
+  }
+function animecroquette(){
+     $('.st-sever-croquette').animate({opacity:1,left:'-60px',bottom:'20px' },200, function() { });
+  }
+function animecuisse(){
+     $('.st-sever-cuisse').animate({opacity:1,right:'10px',top:'-20px' },200, function() { });
+  }
+function animetomate01(){
+     $('.st-sever-tomate01').animate({opacity:1,right:'150px',bottom:'-70px' },200, function() { });
+  }
+function animetomate02(){
+     $('.st-sever-tomate02').animate({opacity:1,left:'30px',top:'50px' },200, function() { });
+  }
+function animefromage01(){
+     $('.st-sever-fromage01').animate({opacity:1,right:'5px',top:'10px' },200, function() { });
+  }
+function animefromage02(){
+     $('.st-sever-fromage02').animate({opacity:1,right:'40px',bottom:'40px' },200, function() { });
+  }
+function animefromage03(){
+     $('.st-sever-fromage03').animate({opacity:1,left:'-20px',top:'40px' },200, function() { });
+  }
+function animearomate01(){
+     $('.st-sever-aromates01').animate({opacity:1,left:'80px',bottom:'40px' },200, function() { });
+  }
+function animearomate02(){
+     $('.st-sever-aromates02').animate({opacity:1,left:'50%',top:'20px' },200, function() { });
+  }
+function animearomate03(){
+     $('.st-sever-aromates03').animate({opacity:1,right:'80px',bottom:'-15px' },200, function() { });
+  }
 
 function animeWeldom(){
 	$('.weldom').append("<div class='weldom-conteneur-relatif'></div>");
@@ -653,13 +824,151 @@ function animebg02weldom(){
         $('.weldom-logo').css('-ms-transform','translate(-50%,-50%)');
         $('.weldom-logo').css('transform','translate(-50%,-50%)');
         $('.weldom-logo').css('opacity','0');
+		
+		$('.weldom-conteneur-bg').append("<img src='img/visseuse.png' class='weldom-perceuse'>");
+        $('.weldom-perceuse').css('position','absolute');
+        $('.weldom-perceuse').css('z-index','20');
+        $('.weldom-perceuse').css('top','20px');
+        $('.weldom-perceuse').css('right','-80px');
+        $('.weldom-perceuse').css('opacity','0');
+		
+		$('.weldom-conteneur-bg').append("<img src='img/vis01.png' class='weldom-vis01'>");
+        $('.weldom-vis01').css('position','absolute');
+        $('.weldom-vis01').css('z-index','21');
+        $('.weldom-vis01').css('top','100px');
+        $('.weldom-vis01').css('left','100px');
+        $('.weldom-vis01').css('opacity','0');
+		
+		$('.weldom-conteneur-bg').append("<img src='img/vis02.png' class='weldom-vis02'>");
+        $('.weldom-vis02').css('position','absolute');
+        $('.weldom-vis02').css('z-index','22');
+        $('.weldom-vis02').css('top','50px');
+        $('.weldom-vis02').css('left','120px');
+        $('.weldom-vis02').css('opacity','0');
+		
+		$('.weldom-conteneur-bg').append("<img src='img/vis03.png' class='weldom-vis03'>");
+        $('.weldom-vis03').css('position','absolute');
+        $('.weldom-vis03').css('z-index','23');
+        $('.weldom-vis03').css('top','60px');
+        $('.weldom-vis03').css('left','170px');
+        $('.weldom-vis03').css('opacity','0');
+		
+		$('.weldom-conteneur-bg').append("<img src='img/vis04.png' class='weldom-vis04'>");
+        $('.weldom-vis04').css('position','absolute');
+        $('.weldom-vis04').css('z-index','24');
+        $('.weldom-vis04').css('bottom','15px');
+        $('.weldom-vis04').css('right','20px');
+        $('.weldom-vis04').css('opacity','0');
+		
+		$('.weldom-conteneur-bg').append("<img src='img/vis05.png' class='weldom-vis05'>");
+        $('.weldom-vis05').css('position','absolute');
+        $('.weldom-vis05').css('z-index','25');
+        $('.weldom-vis05').css('bottom','30px');
+        $('.weldom-vis05').css('right','40px');
+        $('.weldom-vis05').css('opacity','0');
+		
+		$('.weldom-conteneur-bg').append("<img src='img/vis06.png' class='weldom-vis06'>");
+        $('.weldom-vis06').css('position','absolute');
+        $('.weldom-vis06').css('z-index','26');
+        $('.weldom-vis06').css('bottom','40px');
+        $('.weldom-vis06').css('right','25px');
+        $('.weldom-vis06').css('opacity','0');
+		
+		$('.weldom-conteneur-bg').append("<img src='img/vis07.png' class='weldom-vis07'>");
+        $('.weldom-vis07').css('position','absolute');
+        $('.weldom-vis07').css('z-index','27');
+        $('.weldom-vis07').css('bottom','60px');
+        $('.weldom-vis07').css('right','35px');
+        $('.weldom-vis07').css('opacity','0');
+		
 
         $('.weldom-logo').animate({opacity:1 },200, function() { });
+		
+		 $('.weldom-conteneur-bg').append("<div class='weldom-espace-click'></div>");
+        $('.weldom-espace-click').css('position','absolute');
+        $('.weldom-espace-click').css('z-index','80');
+        $('.weldom-espace-click').css('width','100%');
+        $('.weldom-espace-click').css('height','100%');
+        $('.weldom-espace-click').css('left','0');
+        $('.weldom-espace-click').css('top','0');
+        $('.weldom-espace-click').css('opacity','0');
+
+
+   
+
+          //Action au survol
+        $('.weldom-espace-click').mouseover(function() {  
+            $(this).css('cursor', 'pointer');
+            /*$('.kikkoman').css('z-index','25');
+             $('.kiko-bg-vide').animate({opacity:1 },200, function() { });
+            $('.kiko-logo').animate({opacity:0 },200, function() { });*/
+             $('.weldom-logo').animate({left:'60px' },400, function() { });
+			timervisseuse = setTimeout(animevisseuse, 25);
+            timervis01 = setTimeout(animevis01, 50);
+            timervis02 =  setTimeout(animevis02, 150);
+            timervis03 = setTimeout(animevis03, 200);
+            timervis04 = setTimeout(animevis04, 250);
+            timervis05 = setTimeout(animevis05, 300);
+            timervis06 = setTimeout(animevis06, 350);
+            timervis07 = setTimeout(animevis07, 400);
+           
+         
+         });
+		
+		 $('.weldom-espace-click').mouseout(function() { 
+			clearTimeout(animevisseuse); 
+            clearTimeout(animevis01); 
+            clearTimeout(animevis02); 
+            clearTimeout(animevis03); 
+            clearTimeout(animevis04); 
+            clearTimeout(animevis05); 
+            clearTimeout(animevis06); 
+            clearTimeout(animevis07); 
+      
+            $('.weldom-perceuse').animate({opacity:0,top:'20px',right:'-80px' },200, function() { });
+			 $('.weldom-vis01').animate({opacity:0,top:'100px',left:'100px' },200, function() { });
+			 $('.weldom-vis02').animate({opacity:0,top:'50px',left:'120px' },200, function() { });
+          $('.weldom-vis03').animate({opacity:0,top:'60px',left:'170px' },200, function() { });
+			$('.weldom-vis04').animate({opacity:0,bottom:'15px',right:'20px' },200, function() { });
+			 $('.weldom-vis05').animate({opacity:0,bottom:'30px',right:'40px' },200, function() { });
+			 $('.weldom-vis06').animate({opacity:0,bottom:'40px',right:'25px' },200, function() { });
+			 $('.weldom-vis07').animate({opacity:0,bottom:'60px',right:'35px' },200, function() { });
+			  $('.weldom-logo').animate({left:'50%' },400, function() { });
+         });
+
+		
 
 
     });
 }
 
+function animevisseuse(){
+     $('.weldom-perceuse').animate({opacity:1,top:'20px',right:'-40px' },200, function() { });
+  }
+
+function animevis01(){
+     $('.weldom-vis01').animate({opacity:1,top:'20px',left:'40px' },200, function() { });
+  }
+
+function animevis02(){
+     $('.weldom-vis02').animate({opacity:1,top:'60px',left:'100px' },200, function() { });
+  }
+
+function animevis03(){
+     $('.weldom-vis03').animate({opacity:1,top:'80px',left:'140px' },200, function() { });
+  }
+function animevis04(){
+     $('.weldom-vis04').animate({opacity:1,bottom:'-15px',right:'-20px' },200, function() { });
+  }
+function animevis05(){
+     $('.weldom-vis05').animate({opacity:1,bottom:'10px',right:'-40px' },200, function() { });
+  }
+function animevis06(){
+     $('.weldom-vis06').animate({opacity:1,bottom:'40px',right:'-25px' },200, function() { });
+  }
+function animevis07(){
+     $('.weldom-vis07').animate({opacity:1,bottom:'30px',right:'15px' },200, function() { });
+  }
 
 function animeKinepolis(){
 	$('.kinepolis').append("<div class='kinepolis-conteneur-relatif'></div>");
