@@ -126,10 +126,10 @@ function animeKikkoman(){
 }
 
 function animebg01Kikkoman(){
-	$('.kikkoman-bg01').animate({width:'100%',height:'100%' },300, function() { });
+	$('.kikkoman-bg01').animate({width:'100%',height:'100%' },500,'easeOutCirc', function() { });
 }
 function animebg02Kikkoman(){
-	$('.kikkoman-bg02').animate({width:'100%',height:'100%' },300, function() { 
+	$('.kikkoman-bg02').animate({width:'100%',height:'100%' },500,'easeOutCirc', function() { 
 
         $('.kikkoman-bg02').append("<div class='kokki-conteneur-bg'></div>");
         $('.kokki-conteneur-bg').css('position','relative');
@@ -314,36 +314,36 @@ function animeBouteille(){
     $('.kiko-bol02').animate({opacity:1,marginLeft:'25px' },400, function() { });
   }
   function animefleur1(){
-     $('.kiko-fleur01').animate({opacity:1,marginLeft:'25px',bottom:'80px' },400, function() { });
+     $('.kiko-fleur01').animate({opacity:1,marginLeft:'25px',bottom:'80px' },800, 'easeOutElastic', function() { });
   }
 
   function animefleur2(){
-      $('.kiko-fleur02').animate({opacity:1,right:'10px',bottom:'20px' },400, function() { });
+      $('.kiko-fleur02').animate({opacity:1,right:'10px',bottom:'20px' },800, 'easeOutElastic', function() { });
   }
 
   
   function animefleur3(){
-      $('.kiko-fleur03').animate({opacity:1,right:'15px',top:'80px' },400, function() { });
+      $('.kiko-fleur03').animate({opacity:1,right:'15px',top:'80px' },800, 'easeOutElastic', function() { });
   }
 
   function animefleur4(){
-      $('.kiko-fleur04').animate({opacity:1,right:'25px',top:'30px' },300, function() { });
+      $('.kiko-fleur04').animate({opacity:1,right:'25px',top:'30px' },800, 'easeOutElastic', function() { });
   }
 
   function animefleur5(){
-     $('.kiko-fleur05').animate({opacity:1,right:'15px',top:'-15px' },400, function() { });
+     $('.kiko-fleur05').animate({opacity:1,right:'15px',top:'-15px' },800, 'easeOutElastic', function() { });
   }
  
   function animefleur6(){
-     $('.kiko-fleur06').animate({opacity:1,left:'35px',top:'-40px' },250, function() { });
+     $('.kiko-fleur06').animate({opacity:1,left:'35px',top:'-40px' },800, 'easeOutElastic', function() { });
   }
 
   function animefleur7(){
-     $('.kiko-fleur07').animate({opacity:1,left:'15px',top:'20px' },400, function() { });
+     $('.kiko-fleur07').animate({opacity:1,left:'15px',top:'20px' },800, 'easeOutElastic', function() { });
   }
   
   function animefleur8(){
-      $('.kiko-fleur08').animate({opacity:1,left:'50px',top:'35px' },300, function() { });
+      $('.kiko-fleur08').animate({opacity:1,left:'50px',top:'35px' },800, 'easeOutElastic', function() { });
   }
 
 
@@ -381,10 +381,10 @@ function animeBonduelle(){
 }
 
 function animebg01bonduelle(){
-	$('.bonduelle-bg01').animate({width:'100%',height:'100%' },300, function() { });
+	$('.bonduelle-bg01').animate({width:'100%',height:'100%' },500,'easeOutCirc',  function() { });
 }
 function animebg02bonduelle(){
-	$('.bonduelle-bg02').animate({width:'100%',height:'100%' },300, function() { 
+	$('.bonduelle-bg02').animate({width:'100%',height:'100%' },500,'easeOutCirc',  function() { 
 
         $('.bonduelle-bg02').append("<div class='bonduelle-conteneur-bg'></div>");
         $('.bonduelle-conteneur-bg').css('position','relative');
@@ -573,10 +573,10 @@ function animeStSever(){
 }
 
 function animebg01StSever(){
-	$('.st-sever-bg01').animate({width:'100%',height:'100%' },300, function() { });
+	$('.st-sever-bg01').animate({width:'100%',height:'100%' },500,'easeOutCirc', function() { });
 }
 function animebg02StSever(){
-	$('.st-sever-bg02').animate({width:'100%',height:'100%' },300, function() { 
+	$('.st-sever-bg02').animate({width:'100%',height:'100%' },500,'easeOutCirc', function() { 
 
         $('.st-sever-bg02').append("<div class='st-sever-conteneur-bg'></div>");
         $('.st-sever-conteneur-bg').css('position','relative');
@@ -740,37 +740,37 @@ function animebg02StSever(){
     });
 }
 function animeardoise(){
-     $('.st-sever-ardoise').animate({opacity:1 },200, function() { });
+     $('.st-sever-ardoise').animate({opacity:1 },800, 'easeOutElastic', function() { });
   }
 function animecroquette(){
-     $('.st-sever-croquette').animate({opacity:1,left:'-60px',bottom:'20px' },200, function() { });
+     $('.st-sever-croquette').animate({opacity:1,left:'-60px',bottom:'20px' },800, 'easeOutElastic', function() { });
   }
 function animecuisse(){
-     $('.st-sever-cuisse').animate({opacity:1,right:'10px',top:'-20px' },200, function() { });
+     $('.st-sever-cuisse').animate({opacity:1,right:'10px',top:'-20px' },800, 'easeOutElastic', function() { });
   }
 function animetomate01(){
-     $('.st-sever-tomate01').animate({opacity:1,right:'150px',bottom:'-70px' },200, function() { });
+     $('.st-sever-tomate01').animate({opacity:1,right:'150px',bottom:'-70px' },800, 'easeOutElastic', function() { });
   }
 function animetomate02(){
-     $('.st-sever-tomate02').animate({opacity:1,left:'30px',top:'50px' },200, function() { });
+     $('.st-sever-tomate02').animate({opacity:1,left:'30px',top:'50px' },800, 'easeOutElastic', function() { });
   }
 function animefromage01(){
-     $('.st-sever-fromage01').animate({opacity:1,right:'5px',top:'10px' },200, function() { });
+     $('.st-sever-fromage01').animate({opacity:1,right:'5px',top:'10px' },800, 'easeOutElastic', function() { });
   }
 function animefromage02(){
-     $('.st-sever-fromage02').animate({opacity:1,right:'40px',bottom:'40px' },200, function() { });
+     $('.st-sever-fromage02').animate({opacity:1,right:'40px',bottom:'40px' },800, 'easeOutElastic', function() { });
   }
 function animefromage03(){
-     $('.st-sever-fromage03').animate({opacity:1,left:'-20px',top:'40px' },200, function() { });
+     $('.st-sever-fromage03').animate({opacity:1,left:'-20px',top:'40px' },800, 'easeOutElastic', function() { });
   }
 function animearomate01(){
-     $('.st-sever-aromates01').animate({opacity:1,left:'80px',bottom:'40px' },200, function() { });
+     $('.st-sever-aromates01').animate({opacity:1,left:'80px',bottom:'40px' },800, 'easeOutElastic', function() { });
   }
 function animearomate02(){
-     $('.st-sever-aromates02').animate({opacity:1,left:'50%',top:'20px' },200, function() { });
+     $('.st-sever-aromates02').animate({opacity:1,left:'50%',top:'20px' },800, 'easeOutElastic', function() { });
   }
 function animearomate03(){
-     $('.st-sever-aromates03').animate({opacity:1,right:'80px',bottom:'-15px' },200, function() { });
+     $('.st-sever-aromates03').animate({opacity:1,right:'80px',bottom:'-15px' },800, 'easeOutElastic', function() { });
   }
 
 function animeWeldom(){
@@ -805,10 +805,10 @@ function animeWeldom(){
 }
 
 function animebg01weldom(){
-	$('.weldom-bg01').animate({width:'100%',height:'100%' },300, function() { });
+	$('.weldom-bg01').animate({width:'100%',height:'100%' },500,'easeOutCirc', function() { });
 }
 function animebg02weldom(){
-	$('.weldom-bg02').animate({width:'100%',height:'100%' },300, function() { 
+	$('.weldom-bg02').animate({width:'100%',height:'100%' },500,'easeOutCirc', function() { 
 
         $('.weldom-bg02').append("<div class='weldom-conteneur-bg'></div>");
         $('.weldom-conteneur-bg').css('position','relative');
@@ -943,31 +943,31 @@ function animebg02weldom(){
 }
 
 function animevisseuse(){
-     $('.weldom-perceuse').animate({opacity:1,top:'20px',right:'-40px' },200, function() { });
+     $('.weldom-perceuse').animate({opacity:1,top:'20px',right:'-40px' },800, 'easeOutElastic', function() { });
   }
 
 function animevis01(){
-     $('.weldom-vis01').animate({opacity:1,top:'20px',left:'40px' },200, function() { });
+     $('.weldom-vis01').animate({opacity:1,top:'20px',left:'40px' },800, 'easeOutElastic', function() { });
   }
 
 function animevis02(){
-     $('.weldom-vis02').animate({opacity:1,top:'60px',left:'100px' },200, function() { });
+     $('.weldom-vis02').animate({opacity:1,top:'60px',left:'100px' },800, 'easeOutElastic', function() { });
   }
 
 function animevis03(){
-     $('.weldom-vis03').animate({opacity:1,top:'80px',left:'140px' },200, function() { });
+     $('.weldom-vis03').animate({opacity:1,top:'80px',left:'140px' },800, 'easeOutElastic', function() { });
   }
 function animevis04(){
-     $('.weldom-vis04').animate({opacity:1,bottom:'-15px',right:'-20px' },200, function() { });
+     $('.weldom-vis04').animate({opacity:1,bottom:'-15px',right:'-20px' },800, 'easeOutElastic', function() { });
   }
 function animevis05(){
-     $('.weldom-vis05').animate({opacity:1,bottom:'10px',right:'-40px' },200, function() { });
+     $('.weldom-vis05').animate({opacity:1,bottom:'10px',right:'-40px' },800, 'easeOutElastic', function() { });
   }
 function animevis06(){
-     $('.weldom-vis06').animate({opacity:1,bottom:'40px',right:'-25px' },200, function() { });
+     $('.weldom-vis06').animate({opacity:1,bottom:'40px',right:'-25px' },800, 'easeOutElastic', function() { });
   }
 function animevis07(){
-     $('.weldom-vis07').animate({opacity:1,bottom:'30px',right:'15px' },200, function() { });
+     $('.weldom-vis07').animate({opacity:1,bottom:'30px',right:'15px' },800, 'easeOutElastic', function() { });
   }
 
 function animeKinepolis(){
@@ -1002,10 +1002,10 @@ function animeKinepolis(){
 }
 
 function animebg01kinepolis(){
-	$('.kinepolis-bg01').animate({width:'100%',height:'100%' },300, function() { });
+	$('.kinepolis-bg01').animate({width:'100%',height:'100%' },500,'easeOutCirc', function() { });
 }
 function animebg02kinepolis(){
-	$('.kinepolis-bg02').animate({width:'100%',height:'100%' },300, function() { 
+	$('.kinepolis-bg02').animate({width:'100%',height:'100%' },500,'easeOutCirc', function() { 
 
 
         $('.kinepolis-bg02').append("<div class='kinepolis-conteneur-bg'></div>");

@@ -193,7 +193,7 @@ function desactive_menu(){
 
 		// on appelle les fonction qui vont mettre els points à leurs place d'origine
 		setTimeout(originepoint01, 50);
-	    setTimeout(originepoint02, 100);
+	 setTimeout(originepoint02, 100);
 		setTimeout(originepoint03, 150);
 		setTimeout(originepoint04, 200);
 		setTimeout(originepoint05, 250);
